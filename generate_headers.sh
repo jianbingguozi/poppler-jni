@@ -6,5 +6,5 @@
 #
 
 javac src/main/java/edu/illinois/library/poppler/*.java \
-    -d /tmp \
+    -d ./tmp \
     -h src/main/cpp

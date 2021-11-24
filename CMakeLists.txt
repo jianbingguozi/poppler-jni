@@ -5,7 +5,7 @@ set(CMAKE_CXX_STANDARD 11)
 
 find_package(JNI REQUIRED)
 include_directories(${JNI_INCLUDE_DIRS})
-include_directories(/usr/local/include/poppler/cpp)
+include_directories(/usr/include/poppler/cpp)
 
 add_library(poppler-jni SHARED
     src/main/cpp/edu_illinois_library_poppler_PopplerDocument.cpp
