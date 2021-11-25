@@ -25,7 +25,7 @@ public final class PopplerPage {
     long nativePtr;
 
     static {
-        System.loadLibrary(Constants.LIBRARY_NAME);
+        Constants.loadFromJar();
     }
 
     protected PopplerPage(long ptr) {

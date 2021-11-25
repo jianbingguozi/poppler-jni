@@ -1,5 +1,7 @@
 package edu.illinois.library.poppler;
 
+import java.net.URL;
+import java.nio.file.FileSystems;
 import java.util.Arrays;
 
 /**
@@ -27,7 +29,7 @@ public final class PopplerPageRenderer {
     @SuppressWarnings("unused") private long nativePtr;
 
     static {
-        System.loadLibrary(Constants.LIBRARY_NAME);
+        Constants.loadFromJar();
     }
 
     public PopplerPageRenderer() {

@@ -1,7 +1,13 @@
 package edu.illinois.library.poppler;
 
+import java.io.File;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.time.Instant;
+import java.util.Date;
+
+import static edu.illinois.library.poppler.Constants.loadFromJar;
 
 /**
  * <p>Equivalent to a
@@ -14,8 +20,11 @@ import java.time.Instant;
 public final class PopplerDocument {
 
     static {
-        System.loadLibrary(Constants.LIBRARY_NAME);
+        loadFromJar();
     }
+
+
+
 
     @SuppressWarnings({"FieldCanBeLocal", "unused"})
     private final long nativePtr;
