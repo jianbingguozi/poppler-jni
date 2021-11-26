@@ -11,7 +11,7 @@ RUN cmake CMakeLists.txt \
     && make
 
 # 编译jar包
-RUN mvn clean
+RUN mvn clean package -Dmaven.test.skip=true
 
 FROM alpine as runner
 RUN sed -i "s/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g" /etc/apk/repositories \
