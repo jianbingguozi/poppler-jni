@@ -17,3 +17,5 @@ libpoppler-jni.dylib
 /tmp
 /target
 libpoppler-jni.so
+
+.DS_Store
