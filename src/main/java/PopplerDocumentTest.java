@@ -44,11 +44,6 @@ class PopplerDocumentTest {
             final int intHeight = (int) Math.round(height);
 
 
-            for (int i = 0; i < pageSizeCount; i++) {
-                PopplerPage p = doc.getPage(i);
-
-            }
-
             do {
                 PopplerImage image = renderer.renderPage(
                         page, dpi, dpi, 0, 0, intWidth, intHeight);
